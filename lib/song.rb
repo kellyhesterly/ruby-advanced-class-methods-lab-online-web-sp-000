@@ -44,7 +44,7 @@ end
 def self.new_from_filename(name)
    song = self.new
    song.name = name.split
-  #  binding.pry
+   binding.pry
 end
 
 end

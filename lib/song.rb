@@ -51,6 +51,7 @@ end
 
 def self.create_from_filename(filename)
   split_filename = filename.chomp(".mp3").split(" - ")
+  binding.pry
   song = self.new
 
   song.save

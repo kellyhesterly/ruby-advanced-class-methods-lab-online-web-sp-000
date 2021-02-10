@@ -44,4 +44,5 @@ end
 def self.new_from_filename(name)
    song = self.new
    song.name = name.chomp[0]
+   binding.pry
 end

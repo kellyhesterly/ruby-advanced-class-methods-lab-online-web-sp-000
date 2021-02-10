@@ -43,7 +43,7 @@ end
 
 def self.new_from_filename(name)
    song = self.new
-   song.name = name.slice!('.mp3')
+   song.name = name.split
    binding.pry
 end
 

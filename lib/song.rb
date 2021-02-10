@@ -46,3 +46,5 @@ def self.new_from_filename(name)
    song.name = name.chomp[0]
    binding.pry
 end
+
+end

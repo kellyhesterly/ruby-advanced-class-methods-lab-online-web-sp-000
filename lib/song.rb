@@ -41,9 +41,9 @@ def self.alphabetical()
   @@all.sort_by {|song| song.name}
 end
 
-def self.new_from_filename(name)
+def self.new_from_filename(filename)
    song = self.new
-   song.name = name.split
+   song.name = filename.chomp(".mp3")
    binding.pry
 end
 

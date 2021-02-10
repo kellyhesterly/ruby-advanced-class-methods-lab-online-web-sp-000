@@ -60,6 +60,7 @@ def self.create_from_filename(filename)
 end
 
 def destroy_all
+  @@all.clear
 end
 
 end

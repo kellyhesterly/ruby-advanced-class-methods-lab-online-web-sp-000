@@ -42,10 +42,10 @@ def self.alphabetical()
 end
 
 def self.new_from_filename(filename)
-   split = filename.chomp(".mp3").split(" - ")
+   split_filename = filename.chomp(".mp3").split(" - ")
    song = self.new
-   song.name = split[1]
-   song.artist_name = split[0]
+   song.name = split_filename[1]
+   song.artist_name = split_filename[0]
 
    song
 end
